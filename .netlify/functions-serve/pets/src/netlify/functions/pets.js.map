@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/torrencecole/Builds/serverless/netlify/functions/pets.ts"],
+  "sourceRoot": "/var/folders/ps/ft7f1c9n2pb8yrzmfv20kxv40000gn/T/tmp-38059-zVotspndvcro",
+  "sourcesContent": ["import { Handler } from '@netlify/functions';\n\nconst pets = [\n  {\n    id: 1,\n    name: 'fluffy',\n    type: 'dog',\n  },\n  {\n    id: 2,\n    name: 'mittens',\n    type: 'gerbil',\n  },\n  {\n    id: 2,\n    name: 'bruiser',\n    type: process.env.SECRET_VALUE,\n  },\n];\n\nexport const handler: Handler = async (event) => {\n  return {\n    statusCode: 200,\n    headers: {\n      'Content-Type': 'application/json',\n    },\n    body: JSON.stringify(pets),\n  };\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEA,IAAM,OAAO;AAAA,EACX;AAAA,IACE,IAAI;AAAA,IACJ,MAAM;AAAA,IACN,MAAM;AAAA;AAAA,EAER;AAAA,IACE,IAAI;AAAA,IACJ,MAAM;AAAA,IACN,MAAM;AAAA;AAAA,EAER;AAAA,IACE,IAAI;AAAA,IACJ,MAAM;AAAA,IACN,MAAM,QAAQ,IAAI;AAAA;AAAA;AAIf,IAAM,UAAmB,OAAO,UAAU;AAC/C,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,SAAS;AAAA,MACP,gBAAgB;AAAA;AAAA,IAElB,MAAM,KAAK,UAAU;AAAA;AAAA;",
+  "names": []
+}

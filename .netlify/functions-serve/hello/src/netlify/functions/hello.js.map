@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/torrencecole/Builds/serverless/netlify/functions/hello.ts"],
+  "sourceRoot": "/var/folders/ps/ft7f1c9n2pb8yrzmfv20kxv40000gn/T/tmp-38059-d20c5R9K9N6E",
+  "sourcesContent": ["import { Handler } from '@netlify/functions';\n\nexport const handler: Handler = async (event) => {\n  const { name = 'world' } = event.queryStringParameters;\n\n  return {\n    statusCode: 200,\n    body: `hello ${name}!`,\n  };\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEO,IAAM,UAAmB,OAAO,UAAU;AAC/C,QAAM,EAAE,OAAO,YAAY,MAAM;AAEjC,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,SAAS;AAAA;AAAA;",
+  "names": []
+}
